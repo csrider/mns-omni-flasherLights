@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ReleaseNotes>
+
+    <Release>
+        <Date>2019.01.30</Date>
+        <Version>1.0.0</Version>
+        <Author>Chris Rider</Author>
+        <Component type="New" author="Chris Rider">
+            <Summary>Prototyping new app.</Summary>
+            <Description>Early prototyping.</Description>
+        </Component>
+    </Release>
+
+    <Release>
+        <Date>2019.02.08</Date>
+        <Version>1.0.1</Version>
+        <Author>Chris Rider</Author>
+        <Component type="New" author="Chris Rider">
+            <Summary>Finalizing new app.</Summary>
+            <Description>This is the early release.</Description>
+        </Component>
+    </Release>
+
+    <Release>
+        <Date>2020.05.28</Date>
+        <Version>1.1.0</Version>
+        <Author>Chris Rider</Author>
+        <Component type="New" author="Chris Rider">
+            <Summary>Release notes.</Summary>
+            <Description>Documenting and storing release notes in the project file system.</Description>
+        </Component>
+        <Component type="New" author="Chris Rider">
+            <Summary>File-based logging.</Summary>
+            <Description>Implemented file-logger library used in the main app.</Description>
+        </Component>
+        <Component type="New" author="Chris Rider">
+            <Summary>Notification bar item.</Summary>
+            <Description>Implemented notification bar item to help ensure app stays in foreground.</Description>
+        </Component>
+        <Component type="New" author="Chris Rider">
+            <Summary>Application class.</Summary>
+            <Description>Implemented Application class similar to main app.</Description>
+        </Component>
+    </Release>
+
+    <Release>
+        <Date>2020.06.03</Date>
+        <Version>1.1.1</Version>
+        <Author>Chris Rider</Author>
+        <Component type="Update" author="Chris Rider">
+            <Summary>Begin to support messages from v2 app.</Summary>
+            <Description>Lights can now work decently with MessageNet messages from v2 platform. Requires main app version 2.1.5</Description>
+        </Component>
+    </Release>
+
+    <Release>
+        <Date>2020.06.15</Date>
+        <Version>2.0.0</Version>
+        <Author>Chris Rider</Author>
+        <Component type="New" author="Chris Rider">
+            <Summary>Now can keep track of active messages.</Summary>
+            <Description>We now receive the broadcasts from the main app informing us how many deliverable messages it has, and track it. When no messages, we self-initiate standby light mode.</Description>
+        </Component>
+        <Component type="Update" author="Chris Rider">
+            <Summary>Deprecating legacy features for new development.</Summary>
+            <Description>Lights can now work decently with multiple MessageNet messages. Requires main app version 2.2.0</Description>
+        </Component>
+    </Release>
+
+    <Release>
+        <Date>2020.06.16</Date>
+        <Version>2.0.1</Version>
+        <Author>Chris Rider</Author>
+        <Component type="New" author="Chris Rider">
+            <Summary>Message UUID intelligence.</Summary>
+            <Description>Parse and store message UUID from broadcast, so we can track per-message things like light-duration and more. Requires main app version 2.2.1.</Description>
+        </Component>
+    </Release>
+
+    <Release>
+        <Date>2020.06.18</Date>
+        <Version>2.1.0</Version>
+        <Author>Chris Rider</Author>
+        <Component type="New" author="Chris Rider">
+            <Summary>Scanned-device monitoring.</Summary>
+            <Description>Scanner thread now looks for flagged problems and initiates a re-scan whenever it may be appropriate.</Description>
+        </Component>
+        <Component type="Improvement" author="Chris Rider">
+            <Summary>Optimized bluetooth device scanning.</Summary>
+            <Description>Scan callback now initialized and class-scopes resources upon initialization to help optimize subsequent scan operations.</Description>
+        </Component>
+        <Component type="Fix" author="Chris Rider">
+            <Summary>Crash with multiple active light modes.</Summary>
+            <Description>There was sometimes a crash when multiple light modes were being activated with multiple messages, due to something wrong with GATT callbacks and connection states.</Description>
+        </Component>
+    </Release>
+
+    <Release>
+        <Date>2020.06.25</Date>
+        <Version>2.2.0</Version>
+        <Author>Chris Rider</Author>
+        <Component type="Fix" author="Chris Rider">
+            <Summary>Refactoring.</Summary>
+            <Description>Due to a bug between Android and Broadcom chips, with GATT resources not releasing properly, the entire BLE/GATT workflow has been refactored and simplified.</Description>
+        </Component>
+    </Release>
+
+    <Release>
+        <Date>2020.06.28</Date>
+        <Version>2.3.0</Version>
+        <Author>Chris Rider</Author>
+        <Component type="New" author="Chris Rider">
+            <Summary>Main app monitoring and default light state actuation.</Summary>
+            <Description>Monitoring main delivery app's heartbeat and last-communication (redundancy) for anomalies and enforcing standby/default light mode if there are any.</Description>
+        </Component>
+        <Component type="Improvement" author="Chris Rider">
+            <Summary>Default light state manager process.</Summary>
+            <Description>Added getter to support thread monitoring and restart capabilities.</Description>
+        </Component>
+        <Component type="Update" author="Chris Rider">
+            <Summary>Intent-related constants refactoring.</Summary>
+            <Description>Constants class file's intent related strings refactored to make more sense for code maintainability (requires main app v2.3.0).</Description>
+        </Component>
+    </Release>
+
+    <Release>
+        <Date>2020.06.29</Date>
+        <Version>2.3.1</Version>
+        <Author>Chris Rider</Author>
+        <Component type="New" author="Chris Rider">
+            <Summary>Notification bar item shows light status.</Summary>
+            <Description>The item for the app in the Android notification bar now updates with basic light/process status.</Description>
+        </Component>
+    </Release>
+
+    <Release>
+        <Date>2020.06.30</Date>
+        <Version>2.3.2</Version>
+        <Author>Chris Rider</Author>
+        <Component type="New" author="Chris Rider">
+            <Summary>Now providing more information about light command codes.</Summary>
+            <Description>Byte-code for light command is now translated to English in logs and in notification item.</Description>
+        </Component>
+        <Component type="Improvement" author="Chris Rider">
+            <Summary>Notification item is more sensible.</Summary>
+            <Description>Now easier to understand what the driver app is doing with the lights behind the scenes.</Description>
+        </Component>
+        <Component type="Fix" author="Chris Rider">
+            <Summary>Runtime permissions approval workflow.</Summary>
+            <Description>When app first runs after installation, runtime permissions prompt now works properly for all permissions.</Description>
+        </Component>
+    </Release>
+
+    <Release>
+        <Date>2020.06.30</Date>
+        <Version>2.3.3</Version>
+        <Author>Chris Rider</Author>
+        <Component type="New" author="Chris Rider">
+            <Summary>Association procedure now scans and saves closest device.</Summary>
+            <Description>When you tap the "Associate nearest controller" button on the startup screen, we now do a scan for nearest device and save it to the provisioning file.</Description>
+        </Component>
+        <Component type="Update" author="Chris Rider">
+            <Summary>Now using provisioning file MAC address instead of shared prefs.</Summary>
+            <Description>Shared preferences was too dependent on main delivery app version, and hard to maintain. Using the more centralized provisioning file now.</Description>
+        </Component>
+    </Release>
+
+    <Release>
+        <Date>2020.07.06</Date>
+        <Version>2.3.4</Version>
+        <Author>Chris Rider</Author>
+        <Component type="Fix" author="Chris Rider">
+            <Summary>Misc. bug fixes</Summary>
+            <Description>Null error handling in callback class.</Description>
+        </Component>
+        <Component type="Improvement" author="Chris Rider">
+            <Summary>Service discovery retry mechanism.</Summary>
+            <Description>If discoverServices fails, we now try alternative method, and if that fails, retry a couple times.</Description>
+        </Component>
+    </Release>
+
+    <Release>
+        <Date>2020.07.08</Date>
+        <Version>2.4.0</Version>
+        <Author>Chris Rider</Author>
+        <Component type="Fix" author="Chris Rider">
+            <Summary>Catching uncaught exception in callback.</Summary>
+            <Description>Some kind of null pointer exception rarely happens in BluetoothGattCallback's onServicesDiscovered method. We now try/catch it, with logging and disconnect.</Description>
+        </Component>
+        <Component type="New" author="Chris Rider">
+            <Summary>Trying super() invocations in callbacks.</Summary>
+            <Description>BluetoothGattCallback's constructor and methods did not have calls to super() like maybe they should.</Description>
+        </Component>
+        <Component type="New" author="Chris Rider">
+            <Summary>Keeping problem counts.</Summary>
+            <Description>Now keeping track of problem counts for 133 and service-discovery. Not doing anything with them yet, though, other than logging warnings.</Description>
+        </Component>
+    </Release>
+
+    <Release>
+        <Date>2020.07.08</Date>
+        <Version>2.4.1</Version>
+        <Author>Chris Rider</Author>
+        <Component type="Fix" author="Chris Rider">
+            <Summary>Misc. minor bug fixes</Summary>
+            <Description>Problem counters and logging were weird.</Description>
+        </Component>
+    </Release>
+
+    <Release>
+        <Date>2020.07.13</Date>
+        <Version>2.4.2</Version>
+        <Author>Chris Rider</Author>
+        <Component type="Update" author="Chris Rider">
+            <Summary>Code maintainability improvements.</Summary>
+            <Description>Updated BLE comments based on nRF Connect scan results.</Description>
+        </Component>
+    </Release>
+
+</ReleaseNotes>

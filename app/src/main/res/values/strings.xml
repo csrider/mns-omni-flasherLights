@@ -1,0 +1,132 @@
+<resources>
+
+    <!--******************************************************************************************************-->
+    <!-- WARNING - DO NOT MODIFY ANYTHING HERE WITHOUT ALSO MODIFYING THE CORRESPONDING FILE IN THE MAIN APP! -->
+    <!--******************************************************************************************************-->
+
+    <string name="app_name">EvolutionFlasherLights</string>
+
+    <!--=========================================================================================-->
+    <!-- Configure appearance of notification and what it says -->
+    <string name="notification_title">Omni Flasher Lights Controller</string>
+    <string name="notification_text_runningPID">Running as process with ID #</string>
+
+    <!--=========================================================================================-->
+    <!-- Configure intent filters and stuff -->
+    <string name="intentAction_handleLightRequest">com.messagenetsystems.evolutionflasherlights.intent.action.handleLightRequest</string>
+    <string name="intentAction_populateLightControllerAssociationFile">com.messagenetsystems.evolutionflasherlights.intent.action.populateLightControllerAssociationFile</string>
+    <string name="intentAction_associateNearestLights">com.messagenetsystems.evolutionflasherlights.intent.action.associateNearestLights</string>
+
+    <!--=========================================================================================-->
+    <!-- Configure MessageNet Banner command codes -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_NONE">32</integer>                                               <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_OFF">33</integer>                                                <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_STANDBY">35</integer>                                            <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_BLUE_DIM">40</integer>                                           <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_BLUE_MED">41</integer>                                           <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_BLUE_BRI">42</integer>                                           <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_GREEN_DIM">43</integer>                                          <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_GREEN_MED">44</integer>                                          <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_GREEN_BRI">45</integer>                                          <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_ORANGE_DIM">46</integer>                                         <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_ORANGE_MED">47</integer>                                         <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_ORANGE_BRI">48</integer>                                         <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_PINK_DIM">49</integer>                                           <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_PINK_MED">50</integer>                                           <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_PINK_BRI">51</integer>                                           <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_PURPLE_DIM">52</integer>                                         <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_PURPLE_MED">53</integer>                                         <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_PURPLE_BRI">54</integer>                                         <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_RED_DIM">55</integer>                                            <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_RED_MED">56</integer>                                            <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_RED_BRI">57</integer>                                            <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_WHITECOOL_DIM">58</integer>                                      <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_WHITECOOL_MED">59</integer>                                      <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_WHITECOOL_BRI">63</integer>                                      <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_WHITEPURE_DIM">64</integer>                                      <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_WHITEPURE_MED">65</integer>                                      <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_WHITEPURE_BRI">66</integer>                                      <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_WHITEWARM_DIM">67</integer>                                      <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_WHITEWARM_MED">68</integer>                                      <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_WHITEWARM_BRI">69</integer>                                      <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_YELLOW_DIM">70</integer>                                         <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_YELLOW_MED">71</integer>                                         <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_YELLOW_BRI">72</integer>                                         <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FADING_BLUE">85</integer>                                        <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FADING_GREEN">86</integer>                                       <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FADING_ORANGE">87</integer>                                      <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FADING_PINK">88</integer>                                        <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FADING_PURPLE">89</integer>                                      <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FADING_RED">90</integer>                                         <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FADING_WHITECOOL">91</integer>                                   <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FADING_WHITEPURE">92</integer>                                   <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FADING_WHITEWARM">93</integer>                                   <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FADING_YELLOW">94</integer>                                      <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FLASHING_BLUE">100</integer>                                     <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FLASHING_GREEN">101</integer>                                    <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FLASHING_ORANGE">102</integer>                                   <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FLASHING_PINK">103</integer>                                     <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FLASHING_PURPLE">104</integer>                                   <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FLASHING_RED">105</integer>                                      <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FLASHING_WHITECOOL">106</integer>                                <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FLASHING_WHITEPURE">107</integer>                                <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FLASHING_WHITEWARM">108</integer>                                <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+    <integer name="SIGNALLIGHT_CMD_BANNER_FLASHING_YELLOW">109</integer>                                   <!-- decimal value of the banner command byte (defined in support_signal.h) -->
+
+    <!-- Configure RAW MessageNet Banner command codes (what character gets sent from server) -->
+    <string name="SIGNALLIGHT_CMD_NONE">\ </string>                                                 <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_OFF">!</string>                                                   <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_STANDBY">#</string>                                               <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_BLUE_DIM">(</string>                                              <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_BLUE_MED">)</string>                                              <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_BLUE_BRI">*</string>                                              <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_GREEN_DIM">+</string>                                             <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_GREEN_MED">,</string>                                             <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_GREEN_BRI">-</string>                                             <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_ORANGE_DIM">.</string>                                            <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_ORANGE_MED">/</string>                                            <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_ORANGE_BRI">0</string>                                            <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_PINK_DIM">1</string>                                              <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_PINK_MED">2</string>                                              <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_PINK_BRI">3</string>                                              <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_PURPLE_DIM">4</string>                                            <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_PURPLE_MED">5</string>                                            <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_PURPLE_BRI">6</string>                                            <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_RED_DIM">7</string>                                               <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_RED_MED">8</string>                                               <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_RED_BRI">9</string>                                               <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_WHITECOOL_DIM">:</string>                                         <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_WHITECOOL_MED">;</string>                                         <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_WHITECOOL_BRI">\?</string>                                        <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_WHITEPURE_DIM">\@</string>                                        <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_WHITEPURE_MED">A</string>                                         <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_WHITEPURE_BRI">B</string>                                         <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_WHITEWARM_DIM">C</string>                                         <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_WHITEWARM_MED">D</string>                                         <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_WHITEWARM_BRI">E</string>                                         <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_YELLOW_DIM">F</string>                                            <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_YELLOW_MED">G</string>                                            <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_YELLOW_BRI">H</string>                                            <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FADING_BLUE">U</string>                                           <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FADING_GREEN">V</string>                                          <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FADING_ORANGE">W</string>                                         <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FADING_PINK">X</string>                                           <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FADING_PURPLE">Y</string>                                         <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FADING_RED">Z</string>                                            <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FADING_WHITECOOL">[</string>                                      <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FADING_WHITEPURE">\\</string>                                     <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FADING_WHITEWARM">]</string>                                      <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FADING_YELLOW">^</string>                                         <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FLASHING_BLUE">d</string>                                         <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FLASHING_GREEN">e</string>                                        <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FLASHING_ORANGE">f</string>                                       <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FLASHING_PINK">g</string>                                         <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FLASHING_PURPLE">h</string>                                       <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FLASHING_RED">i</string>                                          <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FLASHING_WHITECOOL">j</string>                                    <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FLASHING_WHITEPURE">k</string>                                    <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FLASHING_WHITEWARM">l</string>                                    <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+    <string name="SIGNALLIGHT_CMD_FLASHING_YELLOW">m</string>                                       <!-- ASCII value of the banner command byte (defined in support_signal.h) -->
+
+    <string name="SMAJAX_MESSAGES_NONE">No currently active messages.</string>
+</resources>
