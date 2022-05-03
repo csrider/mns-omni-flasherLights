@@ -6,7 +6,7 @@ android {
             keyAlias 'EvolutionFlasherLights'
             keyPassword 'evolutionflasherlights'
             storeFile file('../evolutionflasherlights.jks')
-            storePassword 'silentm'
+            storePassword 'REDACTED'
         }
     }
     compileSdkVersion 26
